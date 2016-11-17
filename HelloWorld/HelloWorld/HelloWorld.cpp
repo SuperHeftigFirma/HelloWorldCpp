@@ -9,6 +9,11 @@ int add(int x, int y)
 	return x + y;
 }
 
+int mult(int x, int y)
+{
+	return x * y;
+}
+
 
 int main()
 {
@@ -24,6 +29,7 @@ int main()
 	std::cin >> y;
 
 	std::cout << "Die Summe aus " << x << " und " << y << " ist " << add(x, y) << "." << std::endl;
+	std::cout << "Das Produkt aus " << x << " und " << y << " ist " << mult(x, y) << "." << std::endl;
 
 	return 0;
 }
