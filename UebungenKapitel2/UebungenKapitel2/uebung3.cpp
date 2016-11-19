@@ -2,7 +2,7 @@
 #include <iostream>
 #include "constants.h"
 
-double getHight()
+double getHeight()
 {
 	double h;
 	std::cout << "Gebe die anfaengliche Hoehe in Metern eines sich in Ruhe befindlichen Koerpers an, der dann unter Vernachlaessigung der Luftreibung zu Boden faellt: ";
@@ -11,12 +11,12 @@ double getHight()
 	return h;
 }
 
-void printHight(double h, int i)
+void printHeight(double h, int i)
 {
 	std::cout << "Nach " << i << " Sekunden betraegt die Hoehe des Koepers " << h << " m.\n";
 }
 
-double calculateNewHight(double initialHeight, int i)
+double calculateNewHeight(double initialHeight, int i)
 {
 	double distanceFallen;
 	distanceFallen = constants::g * i * i;
@@ -26,15 +26,15 @@ double calculateNewHight(double initialHeight, int i)
 
 void uebung3()
 {
-	const double initialHeight = getHight();
+	const double initialHeight = getHeight();
 
 	int i = 0;
 
 	double h;
 	
-	while ( ( h = calculateNewHight(initialHeight, i) ) > 0)
+	while ( ( h = calculateNewHeight(initialHeight, i) ) > 0)
 	{
-		printHight(h, i);
+		printHeight(h, i);
 
 		i++;
 	}
