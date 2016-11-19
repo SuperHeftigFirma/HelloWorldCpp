@@ -32,12 +32,12 @@ bool isPrimeNumber(int x)
 int main()
 {
 	int x;
-	std::cout << "Gebe eine einstellige ganze Zahl ein: ";
+	std::cout << "Gebe eine einstellige natuerliche Zahl ein: ";
 	std::cin >> x;
 
 	if (isPrimeNumber(x))
 	{
-		std::cout << "Du hast eine einstellige Primzahl eingegeben. :-D " << std::endl;
+		std::cout << "Du hast eine einstellige Primzahl eingegeben. :-D" << std::endl;
 	}
 	else
 	{
