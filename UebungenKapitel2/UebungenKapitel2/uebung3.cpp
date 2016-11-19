@@ -19,7 +19,7 @@ void printHeight(double h, int i)
 double calculateNewHeight(double initialHeight, int i)
 {
 	double distanceFallen;
-	distanceFallen = constants::g * i * i;
+	distanceFallen = constants::g * i * i * 0.5;
 
 	return initialHeight - distanceFallen;
 }
