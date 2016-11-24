@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{B656858A-9D7F-4DA9-B138-0A5B946465C4}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>ÜbungKapitel1</RootNamespace>
+    <RootNamespace>UebungenKapitel1</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
     <ProjectName>UebungenKapitel1</ProjectName>
   </PropertyGroup>
