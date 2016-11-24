@@ -32,10 +32,10 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="ÜbungKapitel1.cpp">
+    <ClCompile Include="io.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="io.cpp">
+    <ClCompile Include="UebungenKapitel1.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
