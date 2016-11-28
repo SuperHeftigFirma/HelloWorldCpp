@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include <iostream>
 
-int getInput()
+int getInput1()
 {
 	int input;
 
@@ -23,7 +23,7 @@ void uebung1()
 {
 	int input;
 
-	input = getInput();
+	input = getInput1();
 
 	if (isEven(input))
 		std::cout << "Die eingegebene Zahl ist gerade!\n";

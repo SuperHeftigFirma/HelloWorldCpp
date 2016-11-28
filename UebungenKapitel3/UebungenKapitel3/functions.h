@@ -4,3 +4,10 @@
 void uebung1();
 
 #endif
+
+#ifndef UEBUNG2
+#define UEBUNG2
+
+void uebung2();
+
+#endif
