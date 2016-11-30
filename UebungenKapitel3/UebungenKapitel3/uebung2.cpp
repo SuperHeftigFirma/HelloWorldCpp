@@ -5,7 +5,7 @@ int getInput2()
 {
 	int input;
 
-	std::cout << "Gebe eine natuerliche Zahle zwischen 1 und 255 ein: ";
+	std::cout << "Gebe eine natuerliche Zahl zwischen 1 und 255 ein: ";
 	std::cin >> input;
 
 	return input;
@@ -19,7 +19,7 @@ void convertIntoBinary(int x)
 	{
 		std::cout << x % 2;
 
-		x = x / 2;
+		x /= 2;
 	} while (x > 0);
 
 	std::cout << "\n";
