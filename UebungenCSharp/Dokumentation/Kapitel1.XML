@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Kapitel1</name>
+    </assembly>
+    <members>
+        <member name="T:Uebungen.Kapitel1.Program">
+            <summary>
+            Eintrittspunkt für Kapitel1.
+            </summary>
+        </member>
+        <member name="M:Uebungen.Kapitel1.Program.Main">
+            <summary>
+            Ausführbare Main-Methode für die Anwendung.
+            </summary>
+        </member>
+        <member name="M:Uebungen.Kapitel1.Program.SchreibeSummeInKonsole(System.Int32)">
+            <summary>
+            Gibt Summe angegebener Zahlen formatiert in der Konsole aus.
+            </summary>
+            <param name="zahl">Auszugebende Zahl</param>
+        </member>
+    </members>
+</doc>

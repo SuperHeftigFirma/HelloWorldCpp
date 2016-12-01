@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SuperHeftigLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:SuperHeftigLibrary.Exceptions.NummerFormatException">
+            <summary>
+            Ausnahmeklasse für fehlerhafte Nummernformate. 
+            </summary>
+        </member>
+        <member name="M:SuperHeftigLibrary.Exceptions.NummerFormatException.#ctor">
+            <summary>
+            Standardkonstruktor ohne Parameter. Gibt Standardmeldung aus.
+            </summary>
+        </member>
+        <member name="M:SuperHeftigLibrary.Exceptions.NummerFormatException.#ctor(System.String)">
+            <summary>
+            Konstruktor mit benutzerdefinierter Meldung.
+            </summary>
+            <param name="meldung">Benutzerdefinierte Meldung</param>
+        </member>
+        <member name="M:SuperHeftigLibrary.Exceptions.NummerFormatException.#ctor(System.String,System.Exception)">
+            <summary>
+            Konstruktor mit benutzerdefinierter Meldung und Angabe einer übergeordneten Exception, 
+            die innerhalb eines try-catch-blocks weiter an diese Exception delegiert wurde.
+            </summary>
+            <param name="meldung">Benutzerdefinierte Meldung</param>
+            <param name="inner">Root-Exception des try-catch-blocks</param>
+        </member>
+        <member name="M:SuperHeftigLibrary.Exceptions.NummerFormatException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Dient der Deserialisierung eines Streams, 
+            zum Beispiel einer gepufferten Fehlerausgabe von sonstwoher.
+            </summary>
+            <param name="info">Überführt den Stream in Werte</param>
+            <param name="stream">Eingabestream-Kontext mit Daten</param>
+        </member>
+        <member name="T:SuperHeftigLibrary.IO.KonsoleOutput">
+            <summary>
+            Stellt Methoden für den Output per Konsole zur Verfügung.
+            </summary>
+        </member>
+        <member name="T:SuperHeftigLibrary.IO.KonsoleOutput.Farben">
+            <summary>
+            Enum für Konsolenfarben.
+            </summary>
+        </member>
+        <member name="M:SuperHeftigLibrary.IO.KonsoleOutput.SetzeKonsolenFarbe(SuperHeftigLibrary.IO.KonsoleOutput.Farben)">
+            <summary>
+            Ändere Farben der Ausgabekonsole, falls möglich.
+            </summary>
+            <param name="farbenIndex">Index der Farbe entsprechend Enum</param>
+        </member>
+        <member name="T:SuperHeftigLibrary.IO.KonsoleInput">
+            <summary>
+            Stellt Methoden für den Input per Konsole zur Verfügung.
+            </summary>
+        </member>
+        <member name="M:SuperHeftigLibrary.IO.KonsoleInput.LeseEingabeAlsInteger">
+            <summary>
+            Lese Benutzereingabe aus Konsole und gebe diese als Integer zurück.
+            </summary>
+            <returns>Integer Benutzereingabe</returns>
+            <exception cref="T:SuperHeftigLibrary.Exceptions.NummerFormatException">Bei Fehleingabe</exception>
+        </member>
+        <member name="T:SuperHeftigLibrary.Konstanten.Welt">
+            <summary>
+            Stellt Konstanten zur Verfügung.
+            </summary>
+        </member>
+        <member name="F:SuperHeftigLibrary.Konstanten.Welt.HoelleZugefroren">
+            <summary>
+            Ist die Hölle zugefroren?
+            </summary>
+        </member>
+        <member name="F:SuperHeftigLibrary.Konstanten.Welt.SchweineFlugtauglich">
+            <summary>
+            Können Schweine fliegen?
+            </summary>
+        </member>
+        <member name="T:SuperHeftigLibrary.Tools.Mathe">
+            <summary>
+            Stellt Rechenmethoden zur Verfügung.
+            </summary>
+        </member>
+        <member name="M:SuperHeftigLibrary.Tools.Mathe.BerechneSumme(System.Int32[])">
+            <summary>
+            Nimmt eine unbestimmte Anzahl an Parametern entgegen und gibt deren Gesamt-Summe aus.
+            </summary>
+            <param name="zahlen">Array von Zahlen</param>
+            <returns>Summe als Integer</returns>
+        </member>
+    </members>
+</doc>

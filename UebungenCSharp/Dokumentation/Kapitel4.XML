@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Kapitel4</name>
+    </assembly>
+    <members>
+        <member name="T:Uebungen.Kapitel4.Program">
+            <summary>
+            Eintrittspunkt für Kapitel4.
+            </summary>
+        </member>
+        <member name="M:Uebungen.Kapitel4.Program.Main">
+            <summary>
+            Ausführbare Main-Methode für die Anwendung.
+            </summary>
+        </member>
+    </members>
+</doc>
