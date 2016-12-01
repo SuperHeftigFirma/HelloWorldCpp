@@ -4,6 +4,39 @@
         <name>SuperHeftigLibrary</name>
     </assembly>
     <members>
+        <member name="T:SuperHeftigLibrary.Exceptions.UeberlaufException">
+            <summary>
+            Ausnahmeklasse für fehlerhafte Nummernformate. 
+            </summary>
+        </member>
+        <member name="M:SuperHeftigLibrary.Exceptions.UeberlaufException.#ctor">
+            <summary>
+            Standardkonstruktor ohne Parameter. Gibt Standardmeldung aus.
+            </summary>
+        </member>
+        <member name="M:SuperHeftigLibrary.Exceptions.UeberlaufException.#ctor(System.String)">
+            <summary>
+            Konstruktor mit benutzerdefinierter Meldung.
+            ToDo: Datentyp oder Min- Max-Werte übergeben und in Fehlermeldung anzeigen.
+            </summary>
+            <param name="meldung">Benutzerdefinierte Meldung</param>
+        </member>
+        <member name="M:SuperHeftigLibrary.Exceptions.UeberlaufException.#ctor(System.String,System.Exception)">
+            <summary>
+            Konstruktor mit benutzerdefinierter Meldung und Angabe einer übergeordneten Exception, 
+            die innerhalb eines try-catch-blocks weiter an diese Exception delegiert wurde.
+            </summary>
+            <param name="meldung">Benutzerdefinierte Meldung</param>
+            <param name="inner">Root-Exception des try-catch-blocks</param>
+        </member>
+        <member name="M:SuperHeftigLibrary.Exceptions.UeberlaufException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Dient der Deserialisierung eines Streams, 
+            zum Beispiel einer gepufferten Fehlerausgabe von sonstwoher.
+            </summary>
+            <param name="info">Überführt den Stream in Werte</param>
+            <param name="stream">Eingabestream-Kontext mit Daten</param>
+        </member>
         <member name="T:SuperHeftigLibrary.Exceptions.NummerFormatException">
             <summary>
             Ausnahmeklasse für fehlerhafte Nummernformate. 

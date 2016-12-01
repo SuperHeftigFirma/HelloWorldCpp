@@ -17,7 +17,14 @@ namespace SuperHeftigLibrary.Tools
             int summe = 0;
             foreach (int zahl in zahlen)
             {
-                summe += zahl;
+                try
+                {
+                    summe = checked(summe + zahl);
+                }
+                catch (System.OverflowException)
+                {
+                    throw new Exceptions.UeberlaufException();
+                }
             }
 
             return summe;

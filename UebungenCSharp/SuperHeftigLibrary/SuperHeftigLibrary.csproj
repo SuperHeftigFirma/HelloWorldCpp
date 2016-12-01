@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exceptions\UeberlaufException.cs" />
     <Compile Include="Exceptions\NummerFormatException.cs" />
     <Compile Include="IO\KonsoleOutput.cs" />
     <Compile Include="Konstanten\Welt.cs" />

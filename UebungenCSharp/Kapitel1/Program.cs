@@ -36,6 +36,16 @@ namespace Uebungen.Kapitel1
                 System.Console.WriteLine("\n" + nfex.Message);
                 KonsoleOutput.SetzeKonsolenFarbe(KonsoleOutput.Farben.Standard);
             }
+            catch (UeberlaufException uebex)
+            {
+                KonsoleOutput.SetzeKonsolenFarbe(KonsoleOutput.Farben.Fehler);
+                System.Console.WriteLine(string.Format(
+                    "\n{0:s}\n[Max]{1:d}\t[Min]{2:d}",
+                    uebex.Message,
+                    int.MaxValue,
+                    int.MinValue));
+                KonsoleOutput.SetzeKonsolenFarbe(KonsoleOutput.Farben.Standard);
+            }
             finally
             {
                 System.Console.WriteLine();
