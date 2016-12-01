@@ -16,10 +16,10 @@ namespace Uebungen.Kapitel1
         /// </summary>
         public static void Main()
         {
-            KonsoleOutput.SetzeKonsolenFarbe(KonsoleOutput.Farben.Info);
-            System.Console.WriteLine("Beliebige Anzahl von Zahlen eingeben, die am Ende summiert werden sollen.");
-            System.Console.WriteLine("Nach Eingabe eines ungültigen Zeichens wird summiert.\n");
-            KonsoleOutput.SetzeKonsolenFarbe(KonsoleOutput.Farben.Standard);
+            KonsoleOutput.WriteLineBunt(
+                "Beliebige Anzahl von Zahlen eingeben, die am Ende summiert werden sollen."
+                + "Nach Eingabe eines ungültigen Zeichens wird summiert.\n",
+                KonsoleOutput.Farben.Info);
 
             int x = 0;
 
@@ -32,19 +32,17 @@ namespace Uebungen.Kapitel1
             }
             catch (NummerFormatException nfex)
             {
-                KonsoleOutput.SetzeKonsolenFarbe(KonsoleOutput.Farben.Fehler);
-                System.Console.WriteLine("\n" + nfex.Message);
-                KonsoleOutput.SetzeKonsolenFarbe(KonsoleOutput.Farben.Standard);
+                KonsoleOutput.WriteLineBunt("\n" + nfex.Message, KonsoleOutput.Farben.Fehler);
             }
             catch (UeberlaufException uebex)
             {
-                KonsoleOutput.SetzeKonsolenFarbe(KonsoleOutput.Farben.Fehler);
-                System.Console.WriteLine(string.Format(
-                    "\n{0:s}\n[Max]{1:d}\t[Min]{2:d}",
-                    uebex.Message,
-                    int.MaxValue,
-                    int.MinValue));
-                KonsoleOutput.SetzeKonsolenFarbe(KonsoleOutput.Farben.Standard);
+                KonsoleOutput.WriteLineBunt(
+                    string.Format(
+                        "\n{0:s}\n[Max]{1:d}\t[Min]{2:d}\n",
+                        uebex.Message,
+                        int.MaxValue,
+                        int.MinValue),
+                    KonsoleOutput.Farben.Fehler);
             }
             finally
             {
@@ -59,10 +57,10 @@ namespace Uebungen.Kapitel1
         /// <param name="zahl">Auszugebende Zahl</param>
         private static void SchreibeSummeInKonsole(int zahl)
         {
-            KonsoleOutput.SetzeKonsolenFarbe(KonsoleOutput.Farben.Erfolg);
-            System.Console.WriteLine(string.Format(
-                    "\nDie Summe der eingegebenen gültigen Zahlen ist: {0:d}\n", zahl));
-            KonsoleOutput.SetzeKonsolenFarbe(KonsoleOutput.Farben.Standard);
+            KonsoleOutput.WriteLineBunt(
+                string.Format(
+                    "\nDie Summe der eingegebenen gültigen Zahlen ist: {0:d}\n", zahl),
+                KonsoleOutput.Farben.Erfolg);
         }
     }
 }

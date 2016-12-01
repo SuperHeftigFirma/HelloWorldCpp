@@ -32,20 +32,29 @@ namespace SuperHeftigLibrary.IO
                     break;
                 case (int)Farben.Erfolg:
                     System.Console.ForegroundColor = System.ConsoleColor.Green;
-                    System.Console.BackgroundColor = System.ConsoleColor.Black;
                     break;
                 case (int)Farben.Fehler:
                     System.Console.ForegroundColor = System.ConsoleColor.Red;
-                    System.Console.BackgroundColor = System.ConsoleColor.Black;
                     break;
                 case (int)Farben.Info:
                     System.Console.ForegroundColor = System.ConsoleColor.Yellow;
-                    System.Console.BackgroundColor = System.ConsoleColor.Black;
                     break;
                 default:
                     SetzeKonsolenFarbe(Farben.Standard);
                     break;
             }
+        }
+
+        /// <summary>
+        /// Gibt einen gefärbten Text in der Konsole aus.
+        /// </summary>
+        /// <param name="text">Text der auszugebenden Nachricht</param>
+        /// <param name="farbenIndex">Index der Farbe entsprechend Enum</param>
+        public static void WriteLineBunt(string text, Farben farbenIndex)
+        {
+            SetzeKonsolenFarbe(farbenIndex);
+            System.Console.WriteLine(text);
+            SetzeKonsolenFarbe(Farben.Standard);
         }
     }
 }

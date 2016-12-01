@@ -13,9 +13,7 @@ namespace Uebungen.Kapitel4
         /// </summary>
         public static void Main()
         {
-            KonsoleOutput.SetzeKonsolenFarbe(KonsoleOutput.Farben.Info);
-            System.Console.WriteLine("Text");
-            KonsoleOutput.SetzeKonsolenFarbe(KonsoleOutput.Farben.Standard);
+            KonsoleOutput.WriteLineBunt("Text", KonsoleOutput.Farben.Info);
         }
     }
 }

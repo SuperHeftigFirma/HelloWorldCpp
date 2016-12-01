@@ -85,6 +85,13 @@
             </summary>
             <param name="farbenIndex">Index der Farbe entsprechend Enum</param>
         </member>
+        <member name="M:SuperHeftigLibrary.IO.KonsoleOutput.WriteLineBunt(System.String,SuperHeftigLibrary.IO.KonsoleOutput.Farben)">
+            <summary>
+            Gibt einen gefärbten Text in der Konsole aus.
+            </summary>
+            <param name="text">Text der auszugebenden Nachricht</param>
+            <param name="farbenIndex">Index der Farbe entsprechend Enum</param>
+        </member>
         <member name="T:SuperHeftigLibrary.IO.KonsoleInput">
             <summary>
             Stellt Methoden für den Input per Konsole zur Verfügung.
