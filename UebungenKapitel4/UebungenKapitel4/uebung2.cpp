@@ -1,52 +1,42 @@
 #include "stdafx.h"
 #include <iostream>
+#include <string>
 
-struct Fraction
+std::string getName()
 {
-	int zaehler;
-	int nenner;
-};
+	std::string name;
+	
+	std::cin.ignore(32767, '\n');
 
-Fraction getFraction()
-{
-	int nenner;
-	int zaehler;
+	std::cout << "Gebe deinen kompletten Namen ein: ";
+	std::getline(std::cin, name);
 
-	std::cout << "Gebe den Zaehler ein: ";
-	std::cin >> zaehler;
-
-	std::cout << "Gebe den Nenner ein: ";
-	std::cin >> nenner;
-
-	Fraction bruch{ zaehler, nenner };
-
-	return bruch;
+	return name;
 }
 
-void multiplyFraction(Fraction f1, Fraction f2)
+int getAlter()
 {
+	int alter;
 
-	std::cout << f1.zaehler << "/" << f1.nenner << " * " << f2.zaehler << "/" << f2.nenner << " = " << static_cast<float>(f1.zaehler * f2.zaehler) / (f1.nenner * f2.nenner) << "\n";
+	std::cout << "Gebe dein Alter ein: ";
+	std::cin >> alter;
 
-	/* std::cout << " " << f1.zeahler << "     " << f2.zeahler << "\n";
-	std::cout << "--- * --- = " << static_cast<float>(f1.zeahler * f2.zeahler) / (f1.nenner * f2.nenner) << "\n";
-	std::cout << " " << f1.nenner << "     " << f2.nenner << "\n"; */
+	return alter;
+}
 
-	//std::cout << "Das Ergebnis der Multiplikation ist: " << static_cast<float>(f1.zeahler * f2.zeahler) / (f1.nenner * f2.nenner) << "\n";
+void calculateYearsPerLetter(std::string name, int alter)
+{
+	std::cout << "Du heisst " << name << " und bist " << alter << " Jahre alt.\n";
+	std::cout << "Das bedeutet, du hast pro Buchstaben in deinem Namen " << static_cast<float>(alter) / name.length() << " Jahre gelebt.\n";
 }
 
 void uebung2()
 {
-	Fraction f1;
-	Fraction f2;
+	std::string name;
+	name = getName();
 
-	std::cout << "Gebe einen ersten Bruch ein.\n";
+	int alter;
+	alter = getAlter();
 
-	f1 = getFraction();
-
-	std::cout << "Gebe einen zweiten Bruch ein.\n";
-
-	f2 = getFraction();
-
-	multiplyFraction(f1, f2);
+	calculateYearsPerLetter(name, alter);
 }

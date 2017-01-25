@@ -158,6 +158,8 @@
     </ClCompile>
     <ClCompile Include="uebung1.cpp" />
     <ClCompile Include="uebung2.cpp" />
+    <ClCompile Include="uebung3.cpp" />
+    <ClCompile Include="uebung4.cpp" />
     <ClCompile Include="UebungenKapitel4.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
