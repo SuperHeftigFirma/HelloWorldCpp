@@ -41,7 +41,7 @@ void uebung4()
 {
 	std::cout << "Oh maechtiger Kellerabenteuerer!\n";
 	std::cout << "\n";
-	std::cout << "Vor euch befinden sich gleich drei verschlossene Tueren, doch ihr musst dich für eine von ihnen entscheiden.\n";
+	std::cout << "Vor euch befinden sich gleich drei verschlossene Tueren, doch ihr musst euch fuer eine von ihnen entscheiden.\n";
 	std::cout << "Hinter Allen sind maechtige Kreaturen eingekerkert.\n";
 	std::cout << "Waehlet weise!\n";
 
