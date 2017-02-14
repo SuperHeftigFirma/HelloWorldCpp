@@ -16,6 +16,9 @@ int main()
 		std::cout << "Bitte waehle:\n";
 		std::cout << "(1) Taschenrechner V 2.0\n";
 		std::cout << "(2) Tiere und ihre Beine\n";
+		std::cout << "(3) ASCII-Tabelle\n";
+		std::cout << "(4) Zahlenpyramide\n";
+		std::cout << "(5) Inverte Zahlenpyramide\n";
 		std::cout << "(0) Programm verlassen\n";
 		std::cin >> eingabe;
 
@@ -26,6 +29,15 @@ int main()
 			break;
 		case 2:
 			uebung2();
+			break;
+		case 3:
+			uebung3();
+			break;
+		case 4:
+			uebung4();
+			break;
+		case 5:
+			uebung5();
 			break;
 		}
 	}
