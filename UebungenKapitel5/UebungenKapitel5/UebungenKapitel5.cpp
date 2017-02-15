@@ -19,6 +19,8 @@ int main()
 		std::cout << "(3) ASCII-Tabelle\n";
 		std::cout << "(4) Zahlenpyramide\n";
 		std::cout << "(5) Inverte Zahlenpyramide\n";
+		std::cout << "(6) Alle geraden Zahlen zwischen 0 und 20\n";
+		std::cout << "(7) Kommulation!\n";
 		std::cout << "(0) Programm verlassen\n";
 		std::cin >> eingabe;
 
@@ -38,6 +40,12 @@ int main()
 			break;
 		case 5:
 			uebung5();
+			break;
+		case 6:
+			uebung6();
+			break;
+		case 7:
+			uebung7();
 			break;
 		}
 	}

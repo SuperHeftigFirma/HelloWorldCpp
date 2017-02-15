@@ -32,3 +32,17 @@ void uebung4();
 void uebung5();
 
 #endif // !UEBUNG5
+
+#ifndef UEBUNG6
+#define UEBUNG6
+
+void uebung6();
+
+#endif // !UEBUNG7
+
+#ifndef UEBUNG7
+#define UEBUNG7
+
+void uebung7();
+
+#endif // !UEBUNG7
