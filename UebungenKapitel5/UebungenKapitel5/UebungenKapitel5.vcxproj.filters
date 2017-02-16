@@ -56,5 +56,8 @@
     <ClCompile Include="uebung7.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="uebung8.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

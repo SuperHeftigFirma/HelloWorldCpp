@@ -21,6 +21,7 @@ int main()
 		std::cout << "(5) Inverte Zahlenpyramide\n";
 		std::cout << "(6) Alle geraden Zahlen zwischen 0 und 20\n";
 		std::cout << "(7) Kommulation!\n";
+		std::cout << "(8) HiLo-Spiel\n";
 		std::cout << "(0) Programm verlassen\n";
 		std::cin >> eingabe;
 
@@ -46,6 +47,9 @@ int main()
 			break;
 		case 7:
 			uebung7();
+			break;
+		case 8:
+			uebung8();
 			break;
 		}
 	}

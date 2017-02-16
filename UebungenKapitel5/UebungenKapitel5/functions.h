@@ -46,3 +46,10 @@ void uebung6();
 void uebung7();
 
 #endif // !UEBUNG7
+
+#ifndef UEBUNG8
+#define UEBUNG8
+
+void uebung8();
+
+#endif // !UEBUNG8
