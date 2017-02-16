@@ -24,16 +24,16 @@ void playGame()
 		{
 			std::cout << "Dein " << iii << ". Versuch: ";
 			std::cin >> guess;
-			std::cin.ignore(32767, '\n');
 
 			if (std::cin.fail())
 			{
 				std::cin.clear();
-
+				std::cin.ignore(32767, '\n');
 				std::cout << "Das war eine falsche Angabe, versuche es erneut.\n";
 			}
 			else
 			{
+				std::cin.ignore(32767, '\n');
 				break;
 			}
 		} while (true);
@@ -72,7 +72,7 @@ bool playAgain()
 		{
 			return false;
 		}
-		else if (input == 'y')
+		else if (input == 'j')
 		{
 			return true;
 		}
