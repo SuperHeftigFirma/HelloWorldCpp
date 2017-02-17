@@ -9,7 +9,7 @@ int generateRandomNumber(int min, int max)
 
 	static const double factor{ (static_cast<double>(max) - static_cast<double>(min) + 1) / (static_cast<double>(mersenne.max()) + 1) };
 
-	return static_cast<int>(mersenne() * factor);
+	return static_cast<int>(mersenne() * factor) + min ;
 }
 
 void playGame()
@@ -54,7 +54,7 @@ void playGame()
 		}
 	}
 
-	std::cout << "Leider hast du alle dene Versuche aufgebraucht.\n";
+	std::cout << "Leider hast du alle deine Versuche aufgebraucht.\n";
 	std::cout << "Du LOOSER!\n";
 }
 
