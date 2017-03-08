@@ -13,7 +13,7 @@ int getInput2()
 
 void convertIntoBinary(int x)
 {
-	std::cout << "Die Zahl lautet im binaeren Zahlensystem (in umgekehrter Reihenfolge: ";
+	std::cout << "Die Zahl lautet im binaeren Zahlensystem (in umgekehrter Reihenfolge): ";
 
 	do
 	{
