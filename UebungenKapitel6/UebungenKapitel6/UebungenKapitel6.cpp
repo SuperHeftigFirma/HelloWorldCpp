@@ -39,8 +39,8 @@ int main()
 				}
 			}
 		}
-	} while (userInput = !0);
+	} while (userInput =! 0);
 
-    return 0;
+	return 0;
 }
 
