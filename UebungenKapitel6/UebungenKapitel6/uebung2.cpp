@@ -5,7 +5,7 @@
 void uebung2()
 {
 	const int arrayLength(9);
-	const int array[arrayLength] = { 6, 3, 2, 9, 7, 1, 5, 4, 8 };
+	int array[arrayLength] = { 6, 3, 2, 9, 7, 1, 5, 4, 8 };
 
 	std::cout << "Das Array array[] = { ";
 
@@ -29,5 +29,26 @@ void uebung2()
 		}
 	}
 
+	for (int startIndex = 0; startIndex < arrayLength; startIndex++)
+	{
+		int minMaxIndex = startIndex;
 
+		for (int actualIndex = startIndex; actualIndex < arrayLength; actualIndex++)
+		{
+			if (userChoice == 1 && array[minMaxIndex] > array[actualIndex])
+				minMaxIndex = actualIndex;
+			else if (userChoice == 2 && array[minMaxIndex] < array[actualIndex])
+				minMaxIndex = actualIndex;
+		}
+
+		std::swap(array[startIndex], array[minMaxIndex]);
+	}
+
+	std::cout << "Das sortierte Array lautet: array[] = { ";
+
+	for (int index = 0; index < arrayLength; index++)
+		std::cout << array[index] << " ";
+
+	std::cout << "}\n";
+	std::cout << "\n";
 }
