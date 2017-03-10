@@ -33,10 +33,21 @@ void uebung3()
 	{
 		for (int endIndex = arrayLength; endIndex >= 0; endIndex--)
 		{
+			bool swapped{ false };
+
 			for (int actualIndex = 0; actualIndex < endIndex - 1; actualIndex++)
 			{
 				if (array[actualIndex] > array[actualIndex + 1])
+				{
 					std::swap(array[actualIndex], array[actualIndex + 1]);
+					swapped = true;
+				}
+			}
+
+			if (!swapped)
+			{
+				std::cout << "Die Sortierung wurde fruehezitig nach " << arrayLength - endIndex + 1 << " Schritten unterbrochen.\n";
+				break;
 			}
 		}
 	}
@@ -44,10 +55,21 @@ void uebung3()
 	{
 		for (int endIndex = 0; endIndex < arrayLength; endIndex++)
 		{
+			bool swapped{ false };
+
 			for (int actualIndex = arrayLength - 1; actualIndex > endIndex; actualIndex--)
 			{
 				if (array[actualIndex] > array[actualIndex - 1])
+				{
 					std::swap(array[actualIndex], array[actualIndex - 1]);
+					swapped = true;
+				}
+			}
+
+			if (!swapped)
+			{
+				std::cout << "Die Sortierung wurde fruehezitig nach " << endIndex + 1 << " Schritten unterbrochen.\n";
+				break;
 			}
 		}
 	}
