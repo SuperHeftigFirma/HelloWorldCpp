@@ -42,11 +42,11 @@ void uebung3()
 	}
 	else if (userChoice == 2)
 	{
-		for (int startIndex = 0; startIndex <=arrayLength; startIndex++)
+		for (int endIndex = 0; endIndex < arrayLength; endIndex++)
 		{
-			for (int actualIndex = arrayLength - 1; actualIndex > startIndex + 1; actualIndex++)
+			for (int actualIndex = arrayLength - 1; actualIndex > endIndex; actualIndex--)
 			{
-				if (array[actualIndex] < array[actualIndex - 1])
+				if (array[actualIndex] > array[actualIndex - 1])
 					std::swap(array[actualIndex], array[actualIndex - 1]);
 			}
 		}
