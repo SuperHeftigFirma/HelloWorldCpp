@@ -13,6 +13,7 @@ int main()
 		std::cout << "Waehlen sie doch einen Menuepunkt aus.\n";
 		std::cout << "(1) Arrrrays\n";
 		std::cout << "(2) Selection Sort\n";
+		std::cout << "(3) Bubble Sort\n";
 		std::cout << "(0) Programm beenden\n";
 
 		std::cin >> userInput;
@@ -39,6 +40,9 @@ int main()
 					break;
 				case 2:
 					uebung2();
+					break;
+				case 3:
+					uebung3();
 					break;
 				}
 			}

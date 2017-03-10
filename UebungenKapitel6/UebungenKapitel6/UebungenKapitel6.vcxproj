@@ -150,6 +150,7 @@
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="uebung1.cpp" />
     <ClCompile Include="uebung2.cpp" />
+    <ClCompile Include="uebung3.cpp" />
     <ClCompile Include="UebungenKapitel6.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
