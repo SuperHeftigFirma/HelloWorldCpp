@@ -46,7 +46,7 @@ void uebung3()
 
 			if (!swapped)
 			{
-				std::cout << "Die Sortierung wurde fruehezitig nach " << arrayLength - endIndex + 1 << " Schritten unterbrochen.\n";
+				std::cout << "Die Sortierung wurde fruehezitig nach " << arrayLength - endIndex + 1 << " Schritten beendet.\n";
 				break;
 			}
 		}
@@ -68,7 +68,7 @@ void uebung3()
 
 			if (!swapped)
 			{
-				std::cout << "Die Sortierung wurde fruehezitig nach " << endIndex + 1 << " Schritten unterbrochen.\n";
+				std::cout << "Die Sortierung wurde fruehezitig nach " << endIndex + 1 << " Schritten beendet.\n";
 				break;
 			}
 		}
