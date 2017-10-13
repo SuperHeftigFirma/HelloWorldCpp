@@ -44,5 +44,8 @@
     <ClCompile Include="uebung3.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="uebung4.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
