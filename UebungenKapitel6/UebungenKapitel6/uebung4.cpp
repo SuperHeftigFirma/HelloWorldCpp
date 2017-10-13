@@ -27,7 +27,7 @@ void uebung4()
 
 	while (arrayLength < 1)
 	{
-		std::cout << "Wie viele Namen willst du eingeben?";
+		std::cout << "Wie viele Namen willst du eingeben? ";
 		std::cin >> arrayLength;
 
 		if (std::cin.fail())
@@ -51,4 +51,8 @@ void uebung4()
 
 	for (int i = 0; i <= arrayLength - 1; i++)
 		std::cout << "Name #" << i + 1 << ": " << names[i] << "\n";
+
+	delete[] names;
+	names = nullptr;
+
 }
