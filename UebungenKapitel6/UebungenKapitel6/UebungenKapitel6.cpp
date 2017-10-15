@@ -15,6 +15,7 @@ int main()
 		std::cout << "(2) Selection Sort\n";
 		std::cout << "(3) Bubble Sort\n";
 		std::cout << "(4) dynamische Arrrrrays\n";
+		std::cout << "(5) foreach-Schleifen!\n";
 		std::cout << "(0) Programm beenden\n";
 
 		std::cin >> userInput;
@@ -47,6 +48,9 @@ int main()
 					break;
 				case 4:
 					uebung4();
+					break;
+				case 5:
+					uebung5();
 					break;
 				}
 			}
